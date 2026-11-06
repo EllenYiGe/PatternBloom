@@ -11,9 +11,9 @@ MODEL="${ORACLE_MODEL:-Qwen/Qwen2.5-1.5B-Instruct}"
 PORT="${ORACLE_PORT:-8100}"
 GPU="${ORACLE_GPU:-0}"
 
-echo "[04a_start_oracle] Launching frozen oracle service."
-echo "[04a_start_oracle] Model: ${MODEL}"
-echo "[04a_start_oracle] Oracle service listening on http://localhost:${PORT}"
+echo "[04a_launch_oracle_server] Launching frozen oracle service."
+echo "[04a_launch_oracle_server] Model: ${MODEL}"
+echo "[04a_launch_oracle_server] Oracle service listening on http://localhost:${PORT}"
 
 exec python -m patternbloom.train.oracle_server \
     --model "${MODEL}" \

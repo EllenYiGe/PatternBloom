@@ -11,7 +11,7 @@ require_endpoint() {
     local name="$1" url="$2"
     if ! curl --max-time 5 -fsS "$url" >/dev/null 2>&1; then
         echo "[04_train_stage1] ERROR: ${name} not reachable at ${url}" >&2
-        echo "[04_train_stage1] Start it first (see scripts/03_start_api.sh, scripts/04a_start_oracle.sh)." >&2
+        echo "[04_train_stage1] Start it first (see scripts/03_start_api.sh, scripts/04a_launch_oracle_server.sh)." >&2
         exit 1
     fi
 }

@@ -156,7 +156,7 @@ specification appears in the paper.
 First, launch the oracle service in a separate process.
 
 ```bash
-bash scripts/04a_start_oracle.sh
+bash scripts/04a_launch_oracle_server.sh
 ```
 
 Then launch the trainer:
@@ -254,7 +254,7 @@ and the average number of retrieval calls per query.
 │   ├── 01_prepare_data.sh
 │   ├── 02_build_hypergraph.sh
 │   ├── 03_start_api.sh
-│   ├── 04a_start_oracle.sh
+│   ├── 04a_launch_oracle_server.sh
 │   ├── 04_train_stage1.sh
 │   ├── 05_distill_gpm.sh
 │   ├── 06_train_stage2.sh
